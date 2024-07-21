@@ -1,0 +1,38 @@
+<body style="background-color: rgb(235, 247, 247);">
+  <section class="section" style="margin-top: 120px; background-color: white; width:650px; margin-left: 450px; margin-top: 150px;">
+    <div class="maindiv" style="display: flex; align-items: center; justify-content: center;">
+      <div class="svgdiv">
+        <svg class="svgg" height="400px" width="350px">
+          <path stroke="#3DC3BE" stroke-width="1" fill="#36B0AB" d="M0 0 H70 L280 240 Q350 320 , 280 400 H0"></path>
+        </svg>
+      </div>
+      <div style="margin-left:30px;">
+        <form (ngSubmit)="login()" style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; background: rgba(255, 255, 255, 0.9);">
+          <div style="margin-bottom: 20px; width: 100%;">
+            <h1 id="head" style="text-align: center;">Log In</h1>
+          </div>
+          <div style="margin-bottom: 20px; width: 100%;">
+            <label for="username" style="display: block; margin-bottom: 5px;">Username</label>
+            <input type="text" id="username" [(ngModel)]="username" name="username" required>
+          </div>
+          <div style="margin-bottom: 20px; width: 100%;">
+            <label for="password" style="display: block; margin-bottom: 5px;">Password</label>
+            <input type="password" id="password" [(ngModel)]="password" name="password" required>
+          </div>
+          <ion-button type="submit" shape="round" color="primary" size="full" style="align-items: center; justify-content: center;">
+            Log In
+          </ion-button>
+          <div style="margin-top: 20px;">
+            <label>Don't have an account? <a href="" routerLink="/signup">Sign Up</a></label>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="" routerLink="/forgot-password">Forgort Password?</a>
+          </div>
+          <div *ngIf="alertMessage" style="margin-top: 20px; color: red;">
+            {{ alertMessage }}
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>

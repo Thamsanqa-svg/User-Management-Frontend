@@ -1,0 +1,16 @@
+<!-- create-role.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create Role</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Role Name</ion-label>
+    <ion-input type="text" [(ngModel)]="roleName"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="createRole()">Create Role</ion-button>
+</ion-content>
+

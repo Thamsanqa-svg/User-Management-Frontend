@@ -1,0 +1,46 @@
+
+
+<ion-content>
+  <ion-card style="height:350px; width:450px; margin-left:auto; margin-right:auto; margin-top:140px;">
+    <div style="margin: 50px 30px;">
+      <h1 style="font-weight: bold; color: black;">Verify Your OTP</h1>
+      <h6>Please enter the OTP sent to your email</h6>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">OTP</ion-label>
+        <ion-input [(ngModel)]="otp"></ion-input>
+      </ion-item>
+      <ion-button expand="full" style="margin-top: 20px;" (click)="verifyOTP()">Verify OTP</ion-button>
+      <div style="margin-top: 20px; text-align: center;">
+
+      </div>
+    </div>
+  </ion-card>
+</ion-content>
+
+
+
+
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>Verify OTP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)]="Email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">OTP</ion-label>
+    <ion-input [(ngModel)]="otp"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="verifyOTP()">Verify OTP</ion-button>
+</ion-content>-->
+
